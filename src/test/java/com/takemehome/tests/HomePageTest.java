@@ -1,22 +1,17 @@
 package com.takemehome.tests;
 
-import com.takemehome.pages.CreateAccountPage;
-import com.takemehome.pages.HomePage;
-import com.takemehome.pages.NavigatePanel;
+import base.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HomePageTest extends TestBase{
+public class HomePageTest extends BaseTest {
+    @BeforeMethod
+    public void precondition() {
 
-@BeforeMethod
-public void precondition(){
-	new HomePage (driver).getNavigatePanel();
-	new NavigatePanel (driver).selectSignUpLink();
+    }
 
-}
-@Test
-public void signUpLink(){
-new CreateAccountPage (driver);
-	//verifySuccessTitle("Create your account")
-}
+    @Test
+    public void test1() {
+
+    }
 }

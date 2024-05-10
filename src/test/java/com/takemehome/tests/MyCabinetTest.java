@@ -1,4 +1,17 @@
 package com.takemehome.tests;
 
-public class MyCabinetTest extends TestBase{
+import base.BaseTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class MyCabinetTest extends BaseTest {
+    @BeforeMethod
+    public void precondition() {
+
+    }
+
+    @Test
+    public void test1() {
+
+    }
 }
